@@ -20,7 +20,7 @@
             android:id="@+id/iv_appLogo"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@drawable/app_logo" />
+            android:src="@drawable/ic_applogo" />
 
         <TextView
             android:id="@+id/tv_appName"

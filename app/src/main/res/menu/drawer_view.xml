@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_viewList"
+            android:icon="@drawable/ic_viewlist"
+            android:title="@string/nav_bikeList" />
+        <item
+            android:id="@+id/item_bookings"
+            android:icon="@drawable/ic_booking"
+            android:title="@string/nav_booking" />
+        <item
+            android:id="@+id/item_aboutUs"
+            android:icon="@drawable/ic_aboutus"
+            android:title="@string/nav_aboutUs" />
+    </group>
+
 </menu>

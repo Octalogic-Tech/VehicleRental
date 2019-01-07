@@ -7,19 +7,19 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
-public class LoginActivity extends AppCompatActivity {
-
-    public TextView tv_registerLink;
+public class RegisterActivity extends AppCompatActivity {
+    public TextView tv_loginLink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_register);
 
     }
 
-    public void registerRedirect(View view){
-        tv_registerLink = findViewById(R.id.tv_registerLink);
-        startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
+    public void loginRedirect(View view){
+        tv_loginLink = findViewById(R.id.tv_registerLink);
+        startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
     }
+
 }

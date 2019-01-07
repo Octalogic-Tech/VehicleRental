@@ -7,6 +7,7 @@
         <item type="color" name="colorSecondary">@color/colorSecondary</item>
         <item type="color" name="colorSecondaryDark">@color/colorSecondaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/roboto</item>
     </style>
 
 </resources>

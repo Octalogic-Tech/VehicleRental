@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_nav_viewList"
+            android:icon="@drawable/ic_viewlist"
+            android:title="View Bikes" />
+        <item
+            android:id="@+id/item_nav_bookings"
+            android:icon="@drawable/ic_booking"
+            android:title="My Bookings" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/item_profile"
+                android:icon="@drawable/ic_profilesettings"
+                android:title="My Profile" />
+            <item
+                android:id="@+id/item_aboutUs"
+                android:icon="@drawable/ic_aboutus"
+                android:title="About Us" />
+        </menu>
+    </item>
+
+</menu>

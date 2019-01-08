@@ -19,9 +19,9 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/colorPrimary"
-            android:elevation="4dp"
+            android:elevation="6dp"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-            android:translationZ="4dp"
+            android:translationZ="6dp"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
 
             <TextView
@@ -69,7 +69,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:background="@drawable/btn_danger_background"
+                android:background="@drawable/background_btn_danger"
                 android:elevation="6dp"
                 android:text="Logout"
                 android:textColor="@color/colorTextLight"

@@ -8,4 +8,5 @@
     <color name="colorTextDark">#000000</color>
     <color name="colorFieldsLight">#FFFFFF</color>
     <color name="colorFieldsDark">#000000</color>
+    <color name="colorDanger">#b71c1c</color>
 </resources>

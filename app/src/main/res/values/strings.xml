@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Vehicle Rental</string>
-    <string name="nav_bikeList">View Bikes</string>
-    <string name="nav_booking">My Bookings</string>
-    <string name="nav_aboutUs">About Us</string>
+    
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
 </resources>

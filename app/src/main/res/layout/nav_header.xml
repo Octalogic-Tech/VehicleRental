@@ -1,22 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="192dp"
-    android:padding="16dp"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark"
-    android:orientation="vertical"
+    android:layout_height="200dp"
     android:background="@color/colorPrimary"
-    android:gravity="bottom">
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_userprofile"/>
+        android:paddingLeft="10dp"
+        android:src="@drawable/ic_userprofile" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="My Profile"
-        android:textColor="@color/colorTextDark"/>
+        android:fontFamily="@font/roboto"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="HI User"
+        android:textColor="@color/colorTextDark"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="user@example.com"
+        android:textColor="@color/colorTextDark"
+        android:textSize="15dp" />
 
 </LinearLayout>

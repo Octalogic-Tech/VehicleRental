@@ -3,13 +3,12 @@ package com.vehiclerental.app.vehiclerental;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
 
-    public TextView tv_registerLink;
+    public TextView mTv_registerLink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +18,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void registerRedirect(View view){
-        tv_registerLink = findViewById(R.id.tv_registerLink);
+        mTv_registerLink = findViewById(R.id.tv_registerLink);
         startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
     }
 }

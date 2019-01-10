@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    android:orientation="vertical"
+    tools:context=".VehicleDetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="6dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:translationZ="6dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <TextView
+            android:id="@+id/tv_toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/passion_one"
+            android:text="@string/app_name"
+            android:textColor="@color/colorTextDark"
+            android:textSize="30sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/iv_vehicleImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="6dp"
+        android:src="@drawable/image_honda_dio"
+        android:translationZ="6dp"
+        tools:layout_height="200dp"
+        tools:src="@drawable/image_honda_dio" />
+
+    <TextView
+        android:id="@+id/tv_vehicle_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:text="Honda Dio"
+        android:textColor="@color/colorTextDark"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:text="Honda Dio" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text=""
+        android:textColor="@color/colorTextDark"
+        android:textSize="20dp"
+        tools:text="Rs. 120 per/day" />
+
+    <TextView
+        android:id="@+id/tv_vendor_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text=""
+        android:textColor="@color/colorTextDark"
+        android:textSize="15dp"
+        tools:text="By Jayesh Bike Rentals" />
+
+    <TextView
+        android:id="@+id/tv_locality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text=""
+        android:textColor="@color/colorTextDark"
+        android:textSize="15dp"
+        tools:text="Mapusa" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="50dp"
+        android:text=""
+        android:textColor="@color/colorTextLight"
+        android:textSize="15dp"
+        android:background="@drawable/background_btn"
+        tools:text="Book this Vehicle"
+        />
+
+
+</LinearLayout>

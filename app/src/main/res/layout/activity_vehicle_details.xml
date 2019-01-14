@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:padding="5dp"
-        android:text="Honda Dio"
+        android:text=""
         android:textColor="@color/colorTextDark"
         android:textSize="30dp"
         android:textStyle="bold"
@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="5dp"
-        android:text=""
+        android:text="Rs. 120 per/day"
         android:textColor="@color/colorTextDark"
         android:textSize="20dp"
         tools:text="Rs. 120 per/day" />

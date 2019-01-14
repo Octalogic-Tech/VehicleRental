@@ -1,8 +1,6 @@
 package com.vehiclerental.app.vehiclerental;
 
 import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -11,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.List;
 
@@ -20,6 +17,8 @@ import models.Vehicle;
 public class VehicleAdapter extends RecyclerView.Adapter<VehicleAdapter.VehicleViewHolder> {
 
     private Context mContext;
+
+    /*Using List<Vehicle>...........................................................................................................*/
     private List<Vehicle> vehicleList;
 
     public VehicleAdapter(Context mContext, List<Vehicle> vehicleList) {
@@ -37,28 +36,13 @@ public class VehicleAdapter extends RecyclerView.Adapter<VehicleAdapter.VehicleV
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final VehicleViewHolder vehicleViewHolder, int i) {
+    public void onBindViewHolder(@NonNull VehicleViewHolder vehicleViewHolder, int i) {
 
         final Vehicle vehicle = vehicleList.get(i);
 
-        vehicleViewHolder.tvVehicleName.setText(vehicle.getmVehicleName());
-        vehicleViewHolder.tvLocality.setText(vehicle.getmLocality());
-        vehicleViewHolder.tvRate.setText("You Pay: "+String.valueOf(vehicle.getmVehicleRate())+" per/day");
-
-        vehicleViewHolder.ivImage.setImageDrawable(mContext.getResources().getDrawable(vehicle.getmVehicleImgLink()));
-
-        vehicleViewHolder.cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                Bundle bundle = new Bundle();
-//                bundle.putString("name",);
-                Intent intent = new Intent(mContext,VehicleDetailsActivity.class);
-                intent.putExtra("name",vehicleViewHolder.tvVehicleName.getText());
-                intent.putExtra("rate",vehicleViewHolder.tvRate.getText());
-                intent.putExtra("locality",vehicleViewHolder.tvLocality.getText());
-                mContext.startActivity(intent);
-            }
-        });
+        vehicleViewHolder.tvVehicleName.setText(vehicle.getVendorName());
+        vehicleViewHolder.tvRate.setText(vehicle.getVehicleName());
+        vehicleViewHolder.tvLocality.setText(vehicle.getLocality());
 
     }
 

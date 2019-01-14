@@ -35,8 +35,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        if (savedInstanceState == null){
-            getSupportFragmentManager().beginTransaction().replace(R.id.fl_fragmentContainer,new VehiclesListFragment()).commit();
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fl_fragmentContainer, new VehiclesListFragment()).commit();
             navigationView.setCheckedItem(R.id.item_nav_viewList);
         }
 

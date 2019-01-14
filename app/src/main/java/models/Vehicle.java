@@ -1,43 +1,33 @@
 package models;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Vehicle {
 
-    private int mVehicleId;
-    private String mVehicleBrand, mVehicleName, mLocality;
-    private int mVehicleRate;
-    private int mVehicleImgLink;
+    private int id;
 
+    @SerializedName("username")
+    private String vehicleName;
 
-    public Vehicle(int mVehicleId, String mVehicleBrand, String mVehicleName, int mVehicleRate, int mVehicleImgLink, String mLocality) {
-        this.mVehicleId = mVehicleId;
-        this.mVehicleBrand = mVehicleBrand;
-        this.mVehicleName = mVehicleName;
-        this.mVehicleRate = mVehicleRate;
-        this.mVehicleImgLink = mVehicleImgLink;
-        this.mLocality = mLocality;
+    @SerializedName("name")
+    private String vendorName;
+
+    @SerializedName("street")
+    private String locality;
+
+    public int getId() {
+        return id;
     }
 
-    public int getmVehicleId() {
-        return mVehicleId;
+    public String getVehicleName() {
+        return vehicleName;
     }
 
-    public String getmVehicleBrand() {
-        return mVehicleBrand;
+    public String getVendorName() {
+        return vendorName;
     }
 
-    public String getmVehicleName() {
-        return mVehicleName;
-    }
-
-    public int getmVehicleRate() {
-        return mVehicleRate;
-    }
-
-    public int getmVehicleImgLink() {
-        return mVehicleImgLink;
-    }
-
-    public String getmLocality() {
-        return mLocality;
+    public String getLocality() {
+        return locality;
     }
 }

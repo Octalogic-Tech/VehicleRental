@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rg_bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Sort By:"
+        android:textColor="@color/colorTextDark" />
+
+    <RadioButton
+        android:id="@+id/rb_lowHigh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layoutDirection="rtl"
+        android:text="Price -- Low to High"
+        android:textColor="@color/colorTextDark" />
+
+    <RadioButton
+        android:id="@+id/rb_highLow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layoutDirection="rtl"
+        android:text="Price -- High to low"
+        android:textColor="@color/colorTextDark" />
+
+</RadioGroup>
+
+<!--
+For both radio buttons add this function
+android:onClick="onRadioButtonClicked"
+and create this function in java file
+-->
